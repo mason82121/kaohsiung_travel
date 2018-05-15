@@ -8,11 +8,8 @@
     <meta name="description" content="高雄觀光景點資訊">
     <meta name="keywords" content="高雄,觀光,景點,好玩">
     <meta name="author" content="hbdoy">
-    <!-- 若有任何侵權請與我聯繫 -->
-    <!-- email: felicity860128@gmail.com -->
     <title>高雄旅遊資訊</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/favor.png">
 </head>
@@ -71,20 +68,17 @@
     <!-- 回到頂端 -->
     <div class="goTop"></div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="js/pagination.min.js"></script>
     <script src="js/travel.js"></script>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             travel.init();
 
             // 回到頂端
-            $(window).scroll(function () {
+            $(window).scroll(function() {
                 // 向下滾動數值大於該值時，即出現箭頭圖案
                 if ($(window).scrollTop() >= 100) {
                     // 淡入: 越小出現越快
@@ -94,7 +88,7 @@
                     $('.goTop').fadeOut(300);
                 }
             });
-            $('.goTop').click(function () {
+            $('.goTop').click(function() {
                 // 箭頭停留時間: 越小消失的越快
                 $('html,body').animate({
                     scrollTop: '0px'
